@@ -6,8 +6,8 @@
 
 import { App } from "vue";
 import {
-  // message,
-  // notification,
+  message,
+  notification,
   Affix,
   Anchor,
   AutoComplete,
@@ -141,7 +141,9 @@ const components = [
 ];
 
 export function registerAntd(app: App): void {
-  components.forEach((component: any) => {
+  components.forEach((component) => {
     app.component(component.name || component.displayName, component);
   });
+  app.config.globalProperties.$message = message;
+  app.config.globalProperties.$notification = notification;
 }
