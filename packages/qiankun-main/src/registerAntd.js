@@ -1,9 +1,3 @@
-/*
- 使用babel-plugin-import按需引入antd，具体配置在babel.config.js中。
- 另外因为是定制主题的方式，还需要在vue.config.js中配置less的相关参数，
- 其中javascriptEnabled的值必须为true，否则主题定制的样式无法生效
- */
-
 import Vue from "vue";
 import {
   Affix,
@@ -145,8 +139,8 @@ const components = [
 function register(components) {
   components.forEach((component) => {
     Vue.use(component);
+    // Vue.component(component.name, component);
   });
-  // Vue.component(Button.name, Button);
 }
 
 register(components);

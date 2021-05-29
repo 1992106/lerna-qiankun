@@ -142,7 +142,8 @@ const components = [
 
 export function registerAntd(app: App): void {
   components.forEach((component) => {
-    app.component(component.name || component.displayName, component);
+    app.use(component);
+    // app.component(component.name || component.displayName, component);
   });
   app.config.globalProperties.$message = message;
   app.config.globalProperties.$notification = notification;

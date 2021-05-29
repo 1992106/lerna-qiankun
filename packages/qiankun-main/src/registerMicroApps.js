@@ -26,7 +26,7 @@ const apps = [
     name: "react-micro-app", // TODO: 对应微应用package.json的name字段与webpack配置的library字段 "react-micro-app"
     entry: "//localhost:8081/", // TODO: 对应微应用的url, 路径最后面的 / 不可省略
     container: "#micro-page", // TODO: 对应主应用 <div id="micro-page"></div>
-    activeRule: "/react/micro-app", // TODO: 对应微应用路由器base字段 "/react/micro-app"
+    activeRule: "/react/micro-app", // TODO: 对应微应用路由器base字段 "/react/micro-app/"
   },
 ];
 
