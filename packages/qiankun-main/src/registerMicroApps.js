@@ -10,23 +10,23 @@ import {
 } from "qiankun";
 
 /**
- * name: 必选，微应用的名称，微应用之间必须确保唯一。TODO: 微应用的包名，对应wabpack配置的library字段 "vue-micro-app"
+ * name: 必选，微应用的名称，微应用之间必须确保唯一。
  * entry: 必选，微应用的入口。
  * container: 必选，微应用的容器节点的选择器或者 Element 实例。
  * activeRule:  必选，微应用的激活规则。
  */
 const apps = [
   {
-    name: "vue-micro-app", // TODO: 对应微应用package.json的name字段与webpack配置的library字段 "vue-micro-app"
-    entry: "//localhost:8080/", // TODO: 对应微应用的url, 路径最后面的 / 不可省略
-    container: "#micro-page", // TODO: 对应主应用 <div id="micro-page"></div>
-    activeRule: "/vue/micro-app", // TODO: 对应微应用路由器base字段 "/vue/micro-app/"
+    name: "vue-micro",
+    entry: "//localhost:8001/", // TODO: 对应[微应用]的url, 路径最后面的 / 不可省略
+    container: "#micro-page", // TODO: 对应[主应用]<div id="micro-page"></div>
+    activeRule: "/vue/micro-app", // TODO: 对应[微应用]路由base字段 "/vue/micro-app/"
   },
   {
-    name: "react-micro-app", // TODO: 对应微应用package.json的name字段与webpack配置的library字段 "react-micro-app"
-    entry: "//localhost:8081/", // TODO: 对应微应用的url, 路径最后面的 / 不可省略
-    container: "#micro-page", // TODO: 对应主应用 <div id="micro-page"></div>
-    activeRule: "/react/micro-app", // TODO: 对应微应用路由器base字段 "/react/micro-app/"
+    name: "react-micro",
+    entry: "//localhost:8002/", // TODO: 对应[微应用]的url, 路径最后面的 / 不可省略
+    container: "#micro-page", // TODO: 对应[主应用]<div id="micro-page"></div>
+    activeRule: "/react/micro-app", // TODO: 对应[微应用]路由base字段 "/react/micro-app/"
   },
 ];
 

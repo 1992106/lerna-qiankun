@@ -6,7 +6,6 @@ import routes from "./router";
 import store from "./store";
 
 // @ts-ignore
-import { registerAntd } from "./registerAntd";
 import "./public-path";
 
 // @ts-ignore
@@ -36,8 +35,6 @@ function render(props = {}) {
     .use(store)
     .use(router)
     .mount(container ? container.querySelector("#app") : "#app"); // 为了避免根 id #app 与其他的 DOM 冲突，需要限制查找范围
-
-  registerAntd(app);
 }
 
 // 独立运行时，直接挂载应用
