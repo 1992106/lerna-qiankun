@@ -43,7 +43,6 @@ export default {
   methods: {
     handleClick($event) {
       this.$router.push({ path: $event.key });
-      console.log($event, 999);
     },
   },
 };

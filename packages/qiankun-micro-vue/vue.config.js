@@ -2,6 +2,7 @@
 const { name } = require("./package");
 
 module.exports = {
+  publicPath: `//localhost:8001/`, // 解决微应用加载【静态资源】会404（微应用独立运行时不能配置）
   devServer: {
     // 监听端口
     port: 8001,

@@ -1,10 +1,9 @@
+import './public-path';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-import './public-path';
 
 ReactDOM.render(
   <React.StrictMode>

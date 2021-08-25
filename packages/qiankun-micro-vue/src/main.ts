@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment,@typescript-eslint/explicit-module-boundary-types */
+// @ts-ignore
+import "./public-path";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 import routes from "./router";
 import store from "./store";
-
-// @ts-ignore
-import "./public-path";
 
 // @ts-ignore
 let app = null;
